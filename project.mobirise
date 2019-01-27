@@ -1,0 +1,816 @@
+{
+  "settings": {
+    "name": "verlynhing_portfolio",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [],
+    "versionFirst": "4.7.6",
+    "uniqCompNum": 3,
+    "versionPublish": "4.8.6",
+    "favicon": "@PROJECT_PATH@/assets/images/vhlogo-128x60.png",
+    "noImageResize": ""
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "margin": "0 auto",
+              "width": "100%",
+              "display": "-webkit-flex",
+              "justify-content": "center",
+              "-webkit-justify-content": "center",
+              "img": {
+                "height": "100%",
+                "margin": "0 auto"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "img": {
+                  "width": "100% !important"
+                }
+              }
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"35\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/homebg2-1920x1275.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#5c698e\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    INTRO WITH IMAGE\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/vhlogow-456x213.png\" alt=\"Mobirise\" mbr-style=\"{'width': mediaSize + '%'}\" title>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r6TzwSrIUX",
+          "_anchor": "header4-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\" mbr-text>I have more than 10 years of experience in the design field, work either independently or in a team - approachable and down to earth yet driven and results oriented. I have been fortunate to work with very talented creative designer and copywriter for the past many years, and have developed a pool of outsources network.<div><br></div><div>I find solutions when I met challenge, even thought the challenge not from my profession, such as adding interaction coding in a pdf form. I subconsciously find a way to solve problems in stead of telling people \"I can't do it\".</div></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_cid": "r6UoSr2c3n",
+          "_anchor": "content9-s",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              }
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                }
+              }
+            },
+            ".mbr-gallery-item > div > span": {
+              "text-align": "center"
+            }
+          },
+          "_name": "gallery2",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"2\" mbr-gallery-show-filter mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "ratAE8Ebzv",
+          "_anchor": "gallery2-w",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhg-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhg-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-4",
+                "caption": "NHG Year Book 2013",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530-800x530.png",
+                "alt": "National Healthcare Group Year Book 2013",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "NHG Year Book 2013",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-488389450-yoma-1-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-488389450-yoma-1-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Yoma AR2014",
+                "active": true
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-239563999-delm-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-239563999-delm-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "DelMonte AR2015",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-307682471-stratech-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-307682471-stratech-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Stratech AR2014",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-328126523-hmi-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-328126523-hmi-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "HMI AR2015",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-495954481-hafary2015-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-495954481-hafary2015-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Hafary AR2015",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-600947036-shc-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-600947036-shc-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "SHC AR2014",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-716726914-abr17-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-716726914-abr17-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "ABR AR2017",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-718148275-rickmersm-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-718148275-rickmersm-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Rickmers Maritime AR2014 (Proposal)",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1010585926-gaylin-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1010585926-gaylin-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Gaylin AR2017 &amp; AR2018",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1024471168-travellite-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1024471168-travellite-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Travelite AR2014 (Proposal)",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-454571887-stcoffee-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-454571887-stcoffee-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "ST Electronic Coffee Table Book",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1073830676-bestec-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1073830676-bestec-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Bestec Company Profile",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1073830676-bestecin-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1073830676-bestecin-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Bestec Company Profile",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-65295622-canviohdd-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-65295622-canviohdd-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Canvio HDD POP",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-250919557-5laptop-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-250919557-5laptop-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Acrylic  Laptops Display",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-513963529-toshibatray-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-513963529-toshibatray-800x530-800x530.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Acrylic Laptops Display",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-382850326-m645-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-382850326-m645-800x533-800x533.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Toshiba M645 Brochure",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1017492154-e200-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1017492154-e200-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba&nbsp;Satellite E200 Brochure",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-640924012-ptv-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-640924012-ptv-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Happy Power TV Family Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-360604916-powertv1-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-360604916-powertv1-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Happy Power TV Family Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-662550295-ptv1b-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-662550295-ptv1b-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Happy Power TV Family Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv2b-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv2b-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Power TV20 Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv2a-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv2a-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Power TV20 Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-662027698-ptv2c-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-662027698-ptv2c-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Power TV20 Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv-1-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-360604916-ptv-1-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Toshiba Power TV20 Campaign",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-789395689-bella-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-789395689-bella-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Bella Skincare Magazine Ad",
+                "active": false
+              },
+              {
+                "tags": "POP/Marketing",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-789395689-bella2-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-789395689-bella2-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Bella Skincare Magazine Ad",
+                "active": false
+              },
+              {
+                "tags": "Packaging",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-600114776-wyndham-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-600114776-wyndham-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Wyndham Estate Box<br>",
+                "active": false
+              },
+              {
+                "tags": "Packaging",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1024689217-wyndham2-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1024689217-wyndham2-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Wyndham Estate Box",
+                "active": false
+              },
+              {
+                "tags": "Packaging",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-605293526jacobs2-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-605293526jacobs2-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Jacob's Creek Wine Box",
+                "active": false
+              },
+              {
+                "tags": "Packaging",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-1044334513-cam-800x533.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-1044334513-cam-800x533-800x533.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Sysmex Webcam Box",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin1-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin1-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Epin Mobile App UI",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin2a-1-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin2a-1-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Epin Mobile App UI",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin2b-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-369906458-epin2b-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Epin Mobile App UI",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-644065177-hafary-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-644065177-hafary-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "Hafary Mobile Web UI (Sample)",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-623051453-lg-800x523.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-623051453-lg-800x523-800x523.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "LG Web Banner",
+                "active": false
+              },
+              {
+                "tags": "Digital",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-794935351-ttjweb-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-794935351-ttjweb-800x530-800x530.png",
+                "alt": "",
+                "title": "Toshiba Product Brochure",
+                "customStyle1": "display-7",
+                "caption": "TTJ Holding Website UI (Proposal)",
+                "active": false
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".media-wrap": {
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              ".mbr-iconfont-logo": {
+                "font-size": "7.5rem",
+                "color": "#f36"
+              },
+              "img": {
+                "height": "6rem"
+              }
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#fff",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#fff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            },
+            "P": {
+              "color": "#879a9f"
+            },
+            "H5": {
+              "color": "#5b686b"
+            },
+            ".copyright > p": {
+              "text-align": "left"
+            }
+          },
+          "_name": "footer1",
+          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked>\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\" selected>0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"mailto:verlynehing@gmail.com\">\n                        <img src=\"@PROJECT_PATH@/assets/images/vhlogo-192x90.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-4\">\n                <h5 class=\"pb-3\">\n                    Address\n                </h5>\n                <p class=\"mbr-text\">Block 321 #10-1553<br>Ang Mo Kio Ave 1<br>560321 Singapore</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Contacts\n                </h5>\n                <p class=\"mbr-text\">\n                    Email: verlynehing@gmail.com<br>Whatsapp: +65 9850 8340<br></p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Download</h5>\n                <p class=\"mbr-text\"><a href=\"assets/files/VerlynHing_CV.pdf\" target=\"_blank\">Resume</a><br></p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".copyright > p\">\n                        © Copyright 2019 Verlyn Hing - All Rights Reserved\n                    </p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qTkAaeaxX5",
+          "_anchor": "footer1-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
