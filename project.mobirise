@@ -669,7 +669,7 @@
                 "alt": "www.nushigh.edu.sg",
                 "title": "www.nushigh.edu.sg",
                 "customStyle1": "display-7",
-                "caption": "<a href=\"http://www.nushigh.edu.sg\" class=\"text-success\">NUS High School Web Banner</a>",
+                "caption": "<a href=\"http://www.nushigh.edu.sg\" class=\"text-success\" target=\"_blank\">NUS High School Web Banner</a>",
                 "active": true
               },
               {
