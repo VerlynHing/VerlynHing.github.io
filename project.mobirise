@@ -188,7 +188,20 @@
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-4",
-                "caption": "NHG Year Book 2013",
+                "caption": "NHG Year Book 2013 (Award)",
+                "active": false
+              },
+              {
+                "tags": "AR/Profile",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530.png",
+                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530-800x530.png",
+                "alt": "National Healthcare Group Year Book 2013",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "NHG Year Book 2013 (Award)",
                 "active": false
               },
               {
@@ -201,20 +214,7 @@
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-4",
-                "caption": "Yoma &nbsp;AR2014",
-                "active": true
-              },
-              {
-                "tags": "AR/Profile",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530.png",
-                "thumb": "@PROJECT_PATH@/assets/images/shutterstock-706679617-nhgin-800x530-800x530.png",
-                "alt": "National Healthcare Group Year Book 2013",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "NHG Year Book 2013",
+                "caption": "Yoma &nbsp;AR2014 (Award)",
                 "active": false
               },
               {
@@ -227,7 +227,7 @@
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
-                "caption": "DelMonte AR2015",
+                "caption": "DelMonte AR2015 (Award)",
                 "active": false
               },
               {
@@ -666,11 +666,11 @@
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "image": "@PROJECT_PATH@/assets/images/shutterstock-626322374-nus-800x530.png",
                 "thumb": "@PROJECT_PATH@/assets/images/shutterstock-626322374-nus-800x530-800x530.png",
-                "alt": "",
-                "title": "",
+                "alt": "www.nushigh.edu.sg",
+                "title": "www.nushigh.edu.sg",
                 "customStyle1": "display-7",
-                "caption": "NUS High School Web Banner",
-                "active": false
+                "caption": "<a href=\"http://www.nushigh.edu.sg\" class=\"text-success\">NUS High School Web Banner</a>",
+                "active": true
               },
               {
                 "tags": "Digital",
@@ -695,7 +695,7 @@
                 "alt": "",
                 "title": "Toshiba Product Brochure",
                 "customStyle1": "display-7",
-                "caption": "TTJ Holding Website UI (Proposal)",
+                "caption": "TTJ Holding Website UI (Confirmed Artwork)",
                 "active": false
               }
             ]
